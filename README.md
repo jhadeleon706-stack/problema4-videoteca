@@ -1,4 +1,3 @@
-# Problema 4 - Videoteca Digital
 # Matriz de la videoteca
 videoteca = [
     ["Stranger Things", 2022, 9.1, "Ciencia Ficcion"],
@@ -10,19 +9,19 @@ videoteca = [
     ["Dune", 2023, 9.3, "Ciencia Ficcion"]
 ]
 
-# Función para contar títulos que cumplen los criterios
-def contar_titulos_populares(matriz, calificacion_minima, año_limite):
+# Funcion
+def contar_titulos_populares(matriz, calificacion_minima, anio_limite):
 
     contador = 0
 
     for titulo in matriz:
 
         nombre = titulo[0]
-        año = titulo[1]
+        anio = titulo[1]
         calificacion = titulo[2]
         genero = titulo[3]
 
-        if calificacion >= calificacion_minima and año >= año_limite:
+        if calificacion >= calificacion_minima and anio >= anio_limite:
             contador += 1
 
     return contador
@@ -30,16 +29,17 @@ def contar_titulos_populares(matriz, calificacion_minima, año_limite):
 
 # Datos de prueba
 calificacion_minima = 8.5
-año_limite = 2022
+anio_limite = 2022
 
-# Llamado de la función
+# Llamado de la funcion
 resultado = contar_titulos_populares(
     videoteca,
     calificacion_minima,
-    año_limite
+    anio_limite
 )
 
 # Mostrar resultado
-print("Cantidad de títulos populares y recientes:", resultado)
+print("Cantidad de titulos populares y recientes:", resultado)
+
 
 
