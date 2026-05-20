@@ -41,3 +41,5 @@ resultado = contar_titulos_populares(
 
 # Mostrar resultado
 print("Cantidad de títulos populares y recientes:", resultado)
+
+
